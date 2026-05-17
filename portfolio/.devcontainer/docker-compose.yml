@@ -1,0 +1,22 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    labels:
+      - "caddy=portfoliomatthiasmets.duckdns.org"
+      - "caddy.reverse_proxy={{upstreams 3000}}"
+
+  caddy:
+    image: lucaslorentz/caddy-docker-proxy:latest
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - caddy_data:/data
+
+volumes:
+  caddy_data:
