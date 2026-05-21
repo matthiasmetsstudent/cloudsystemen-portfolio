@@ -1,158 +1,97 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-    <title><%= title %></title>
 </head>
 <body>
 
-    <div class="noise"></div>
-
     <nav>
-        <span class="nav-name">MM</span>
-        <ul>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projecten">Projecten</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <h2>Matthias Mets</h2>
+
+        <div>
+            <a href="#projects">Projecten</a>
+            <a href="#contact">Contact</a>
+        </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-label">Graduaat Programmeren · AP Hogeschool</div>
-        <h1>Matthias<br><em>Mets</em></h1>
-        <p class="hero-sub">Full-stack developer uit België. Van TypeScript backends tot Linux servers — ik bouw en deploy het zelf.</p>
-        <a href="#contact" class="cta-btn">Neem contact op</a>
-        <div class="scroll-hint">↓</div>
-    </header>
+    <main>
+        <section class="hero">
+            <h1>Full-stack developer</h1>
 
-    <section id="skills" class="section">
-        <div class="section-header">
-            <span class="section-num">01</span>
-            <h2>Skills</h2>
-        </div>
-        <div class="skills-grid">
-            <div class="skill-item">
-                <span class="skill-dot"></span>
-                <span class="skill-name">TypeScript</span>
-                <span class="skill-cat">Backend / Frontend</span>
-            </div>
-            <div class="skill-item">
-                <span class="skill-dot"></span>
-                <span class="skill-name">JavaScript</span>
-                <span class="skill-cat">Web development</span>
-            </div>
-            <div class="skill-item">
-                <span class="skill-dot"></span>
-                <span class="skill-name">.NET / C#</span>
-                <span class="skill-cat">Backend</span>
-            </div>
-            <div class="skill-item">
-                <span class="skill-dot"></span>
-                <span class="skill-name">SQL</span>
-                <span class="skill-cat">Databases</span>
-            </div>
-            <div class="skill-item">
-                <span class="skill-dot"></span>
-                <span class="skill-name">Docker</span>
-                <span class="skill-cat">Containerisatie</span>
-            </div>
-            <div class="skill-item">
-                <span class="skill-dot"></span>
-                <span class="skill-name">Linux</span>
-                <span class="skill-cat">Server / DevOps</span>
-            </div>
-            <div class="skill-item">
-                <span class="skill-dot"></span>
-                <span class="skill-name">Node.js</span>
-                <span class="skill-cat">Runtime</span>
-            </div>
-            <div class="skill-item">
-                <span class="skill-dot"></span>
-                <span class="skill-name">Git</span>
-                <span class="skill-cat">Versiebeheer</span>
-            </div>
-        </div>
-    </section>
+            <p>
+                Student Graduaat Programmeren met interesse in
+                TypeScript, .NET en Linux servers.
+            </p>
+        </section>
 
-    <section id="projecten" class="section section-alt">
-        <div class="section-header">
-            <span class="section-num">02</span>
-            <h2>Projecten</h2>
-        </div>
-        <div class="projects-list">
-            <div class="project-item">
-                <div class="project-left">
-                    <span class="project-num">01</span>
-                </div>
-                <div class="project-right">
-                    <h3>Portfolio website</h3>
-                    <p>Persoonlijke portfolio gebouwd met Node.js, Express en EJS. Gedeployed op een Hetzner VPS met Docker en Caddy als reverse proxy. Automatisch HTTPS via DuckDNS.</p>
-                    <div class="project-tags">
-                        <span>TypeScript</span>
-                        <span>Docker</span>
-                        <span>Hetzner</span>
-                        <span>Caddy</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-left">
-                    <span class="project-num">02</span>
-                </div>
-                <div class="project-right">
-                    <h3>Cloud systemen</h3>
-                    <p>Schoolproject rond cloud infrastructuur, containerisatie en CI/CD pipelines. Automatische deployments via GitHub Actions.</p>
-                    <div class="project-tags">
-                        <span>Linux</span>
-                        <span>Docker</span>
-                        <span>GitHub Actions</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-left">
-                    <span class="project-num">03</span>
-                </div>
-                <div class="project-right">
-                    <h3>.NET applicatie</h3>
-                    <p>Backend applicatie ontwikkeld in C# met ASP.NET Core en een relationele SQL database. REST API met volledige CRUD functionaliteit.</p>
-                    <div class="project-tags">
-                        <span>.NET</span>
-                        <span>C#</span>
-                        <span>SQL</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section id="skills">
+    <h2>Skills</h2>
 
-    <section id="contact" class="section">
-        <div class="section-header">
-            <span class="section-num">03</span>
+    <div class="skills">
+        <span>Docker</span>
+        <span>TypeScript</span>
+        <span>JavaScript</span>
+        <span>.NET</span>
+        <span>SQL</span>
+        <span>Linux</span>
+        <span>Node.js</span>
+        <span>Git</span>
+        <span>Express</span>
+        <span>EJS</span>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projecten</h2>
+
+    <div class="card">
+        <h3>Webontwikkeling Project</h3>
+
+        <p>
+            Full-stack webapplicatie gebouwd met Node.js,
+            Express, EJS en SQL database.
+        </p>
+
+        <a href="https://github.com/AP-G-1PRO-Webontwikkeling/project-webontwikkeling-2025-matthiasmetsstudent" target="_blank">
+            Bekijk project
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>GameHub-Project</h3>
+
+        <p>
+            Groepsproject ontwikkeld met ons 3 voor het vak WPL-Project. Hierbij hebben we een Game pagina gemaakt met interactieve features zoals: Collecties, Minigames en informatie pagina's van meer dan 500.000 games.
+        </p>
+
+        <a href="https://github.com/nikitaov5/IT-zo" target="_blank">
+            Bekijk project
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>Portfolio Website</h3>
+
+        <p>
+            Persoonlijke portfolio website gedeployed met Docker
+            op een Linux VPS.
+        </p>
+    </div>
+</section>
+
+        <section id="contact">
             <h2>Contact</h2>
-        </div>
-        <p class="contact-intro">Interesse in samenwerking of een stageplek? Stuur me een bericht.</p>
-        <div class="contact-links">
-            <a href="https://github.com/matthiasmetsstudent" class="contact-link" target="_blank">
-                <span class="contact-arrow">→</span> GitHub
-            </a>
-            <a href="mailto:matthias@example.com" class="contact-link">
-                <span class="contact-arrow">→</span> E-mail
-            </a>
-            <a href="https://linkedin.com" class="contact-link" target="_blank">
-                <span class="contact-arrow">→</span> LinkedIn
-            </a>
-        </div>
-    </section>
 
-    <footer>
-        <span>© 2026 Matthias Mets</span>
-        <span>AP Hogeschool · Graduaat Programmeren</span>
-    </footer>
+            <a href="https://github.com/matthiasmetsstudent">
+                GitHub - Klik hier
+            </a>
 
+            <p href="">E-mail: matthiasmets@gmail.com</p>
+        </section>
+    </main>
 </body>
+
 </html>
